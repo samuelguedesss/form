@@ -50,7 +50,7 @@ const Form = () => {
     return (
         <section className="section-form">
             <form action="" className="formulario" onSubmit={objeto}>
-
+                    <h1 className='titulo'>Formulario</h1>
                 <label htmlFor="" className="label">Nome</label>
                 <input type="text" placeholder="Nome:" value={nomeInformado} onChange={nome} name='Nome' />
 
@@ -63,7 +63,7 @@ const Form = () => {
                 <label htmlFor="" className="label">Tecnologia favorita:</label>
 
                 <select name="tecnologias" id="tecnologias" multiple value={tecnologiaSelecionadas} onChange={tecnologia}>
-                    
+
                     {tecnologias.map((tec) => (
                         <option key={tec} value={tec}>
                             {tec}
